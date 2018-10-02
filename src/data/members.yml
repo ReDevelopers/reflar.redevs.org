@@ -2,7 +2,7 @@
   github: CDK2020
   description: From the United States, Charlie has coded since he was 8 years old. Charlie co-founded ReDevs and ReFlar. He loves technology, space, and music.
   roles:
-    - Lead Back-End Developer
+    - Lead Backend Developer
 
 - name: Christian L
   github: Ralkage
@@ -13,7 +13,7 @@
   github: datitisev
   description: Young Spanish coder. Has made several websites for clients, and contributed to Flarum multiple times. Loves the internet, NodeJS, and videogames.
   roles:
-    - Lead Front-End Developer
+    - Lead Frontend Developer
 
 - name: Angel A
   github: AngellitoX
