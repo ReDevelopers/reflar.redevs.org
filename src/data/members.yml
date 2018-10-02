@@ -1,0 +1,43 @@
+- name: Charlie K
+  github: CDK2020
+  description: From the United States, Charlie has coded since he was 8 years old. Charlie co-founded ReDevs and ReFlar. He loves technology, space, and music.
+  roles:
+    - Lead Developer
+    - Co-Founder
+
+- name: Christian L
+  github: Ralkage
+  roles:
+    - Full-Stack Developer
+    - Co-Founder
+
+- name: David S
+  github: datitisev
+  description: Young Spanish coder. Has made several websites for clients, and contributed to Flarum multiple times. Loves the internet, NodeJS, and videogames.
+  roles:
+    - Full-Stack Developer
+
+- name: Angel A
+  github: AngellitoX
+  roles:
+    - Designer
+    - Technical Writer
+
+- name: Shahiem
+  github: Shahiem
+  roles:
+    - Full-Stack Developer
+
+- name: Tristian K
+  github: OrdinaryJellyfish
+  roles:
+    - Full-Stack Developer
+
+- name: Joel B
+  roles:
+    - Full-Stack Developer
+
+- name: "0E800"
+  github: "0E800"
+  roles:
+    - Lead Designer

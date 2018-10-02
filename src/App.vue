@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <Navbar />
-    <router-view/>
+    <div class="container">
+      <router-view/>
+    </div>
   </div>
 </template>
 
@@ -14,6 +16,12 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
 }
 </style>
 

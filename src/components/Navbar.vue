@@ -1,8 +1,8 @@
 <template>
-  <nav id="navbar" class="flex items-center justify-between flex-wrap p-4">
-    <div class="inline-block text-xl tracking-tight">
+  <nav id="navbar" class="flex flex-no-wrap items-center justify-between lg-auto p-4">
+    <div class="inline-block">
       <router-link to="/">
-        <img alt="ReFlar logo" src="../assets/logo.png" />
+        <img alt="ReFlar Logo" src="../assets/logo.png" />
       </router-link>
     </div>
     <div>
@@ -17,8 +17,11 @@
 
 <style lang="less">
 #navbar {
+  padding-left: 5%;
+  padding-right: 5%;
   background-color: #263238;
   margin-bottom: 20px;
+  text-transform: uppercase;
 
   a {
     color: white;
