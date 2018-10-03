@@ -1,0 +1,88 @@
+- name: User Management
+  id: user-management
+  description: Manage your users with style
+  authors:
+    - CDK2020
+    - Ralkage
+
+- name: Gamification
+  description: Upvotes and downvotes for your Flarum community
+  authors:
+    - CDK2020
+    - Ralkage
+
+- name: Reactions
+  description: Reactions for Flarum
+  authors:
+    - datitisev
+    - CDK2020
+
+- name: Polls
+  description: Upvotes and downvotes for your Flarum community
+  authors:
+    - Shahiem
+
+- name: UnCache
+  description: No more cache related problems!
+  authors:
+    - CDK2020
+
+- name: Koseki
+  description: Tidy up your Flarum forum with a structured hierarchical layout.
+  authors:
+    - Shahiem
+
+- name: Night Mode
+  id: nightmode
+  description: Turn your flarum forum to dark as user
+  authors:
+    - Shahiem
+
+- name: Level Ranks
+  id: level-ranks
+  description: Add a level/experience bar to your flarum Forum.
+  authors:
+    - Shahiem
+
+- name: Pretty Mail
+  id: pretty-mail
+  description: Make emails pretty
+  authors:
+    - CDK2020
+
+- name: Two Factor
+  id: twofactor
+  img: twofactor-icon
+  description: Add factor authentication to Flarum
+  authors:
+    - CDK2020
+
+- name: GitLab Login
+  id: oauth-gitlab
+  description: Allow users to log in with GitLab.
+  authors:
+    - CDK2020
+    - Ralkage
+    - datitisev
+
+- name: Clean Profile Posts
+  id: clean-profile-posts
+  description: Removes the initial posts of discussions from the user's profile posts list
+  authors:
+    - datitisev
+
+- name: Geotags
+  description: Geotags for Flarum forum messages.
+  authors:
+    - CDK2020
+
+- name: LaTeX
+  description: Renders LaTeX expressions.
+  authors:
+    - datitisev
+
+- name: Stop Forum Spam
+  id: stopforumspam
+  description: Stop Forum Spam
+  authors:
+    - CDK2020

@@ -1,6 +1,6 @@
 <template>
   <nav id="navbar" class="flex flex-no-wrap items-center justify-between lg-auto p-4">
-    <div class="inline-block">
+    <div class="flex-no-shrink inline-block">
       <router-link to="/">
         <img alt="ReFlar Logo" src="../assets/logo.png" />
       </router-link>

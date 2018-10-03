@@ -9,6 +9,7 @@
 
 <style lang="less">
 @import "assets/styles/main.less";
+@import "assets/styles/index.less";
 
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
@@ -22,6 +23,7 @@
   margin-left: auto;
   margin-right: auto;
   width: 90%;
+  text-align: left;
 }
 </style>
 

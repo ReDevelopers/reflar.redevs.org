@@ -11,6 +11,7 @@
 
 - name: David S
   github: datitisev
+  alias: David
   description: Young Spanish coder. Has made several websites for clients, and contributed to Flarum multiple times. Loves the internet, NodeJS, and videogames.
   roles:
     - Lead Frontend Developer
