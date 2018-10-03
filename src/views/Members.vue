@@ -3,7 +3,7 @@
     <div class="flex flex-wrap justify-center items-stretch">
       <div class="flex-grow member py-8 max-w-sm rounded overflow-hidden py-4 text-center" v-for="member in members" :key="member.name">
         <a :href="member.github && `https://github.com/${member.github}`" target="_blank">
-          <img :src="`https://github.com/${member.github}.png`" :alt="member.name" class="rounded-full w-16" />
+          <img v-lazy="`https://github.com/${member.github}.png`" :alt="member.name" class="rounded-full w-16" />
           <div class="px-6 py-4">
             <div class="font-bold text-lg mb-2">{{ member.name }}</div>
           </div>

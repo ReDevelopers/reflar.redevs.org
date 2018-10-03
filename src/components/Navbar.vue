@@ -26,6 +26,7 @@
   a {
     color: white;
     font-weight: bold;
+    transition: color 0.25s linear;
 
     &.router-link-exact-active {
       color: #42b983;
