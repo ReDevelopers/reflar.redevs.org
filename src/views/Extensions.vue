@@ -1,5 +1,5 @@
 <template>
-  <div id="Extensions" class="px-6">
+  <div id="Extensions">
     <h1 class="py-2">Extensions</h1>
     <div class="items-list">
       <div class="card py-8 overflow-hidden" v-for="ext in exts" :key="ext.name">

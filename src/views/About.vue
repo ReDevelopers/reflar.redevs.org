@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div id="About">
+    <h1 class="py-2">About</h1>
   </div>
 </template>

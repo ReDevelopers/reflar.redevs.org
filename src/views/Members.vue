@@ -1,5 +1,5 @@
 <template>
-  <div id="Members" class="px-6">
+  <div id="Members">
     <h1 class="py-2">Members</h1>
     <div class="items-list">
       <div class="card member py-8 overflow-hidden" v-for="member in members" :key="member.name">
