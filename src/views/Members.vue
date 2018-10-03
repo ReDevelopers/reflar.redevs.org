@@ -24,9 +24,17 @@
 </template>
 
 <style lang="less">
+@import "../assets/styles/animations.less";
+
 #Members {
   .member {
     min-width: 300px;
+
+    img[lazy=loaded] {
+      animation-duration: 1s;
+      animation-fill-mode: both;
+      animation-name: zoomInStable;
+    }
 
     a[href^="http"] {
       color: inherit;
