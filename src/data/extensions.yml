@@ -21,6 +21,7 @@
   description: Upvotes and downvotes for your Flarum community
   authors:
     - Shahiem
+    - CDK2020
 
 - name: UnCache
   description: No more cache related problems!
@@ -40,7 +41,7 @@
 
 - name: Level Ranks
   id: level-ranks
-  description: Add a level/experience bar to your flarum Forum.
+  description: Add a level/experience bar to your flarum Forum
   authors:
     - Shahiem
 
@@ -63,7 +64,6 @@
   authors:
     - CDK2020
     - Ralkage
-    - datitisev
 
 - name: Clean Profile Posts
   id: clean-profile-posts
@@ -72,12 +72,12 @@
     - datitisev
 
 - name: Geotags
-  description: Geotags for Flarum forum messages.
+  description: Geotags for Flarum forum messages
   authors:
     - CDK2020
 
 - name: LaTeX
-  description: Renders LaTeX expressions.
+  description: Renders LaTeX expressions
   authors:
     - datitisev
 
