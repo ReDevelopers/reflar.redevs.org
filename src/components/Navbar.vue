@@ -1,16 +1,22 @@
 <template>
   <nav id="navbar" class="flex flex-no-wrap items-center justify-between lg-auto p-4">
-    <div class="flex-no-shrink inline-block">
+    <div class="flex-no-shrink inline-block logo">
       <router-link to="/">
         <img alt="ReFlar Logo" src="../assets/logo.png" />
       </router-link>
     </div>
-    <div>
+    <div class="links">
       <router-link to="/about" class="no-underline hover:underline mr-4 text-sm">About</router-link>
       <router-link to="/extensions" class="no-underline hover:underline mr-4 text-sm">Extensions</router-link>
       <router-link to="/members" class="no-underline hover:underline mr-4 text-sm">Members</router-link>
       
-      <a href="https://github.com/ReFlar" class="no-underline hover:underline mr-4 text-sm" target="_blank" rel="noreferrer">GitHub</a>
+      <a href="https://github.com/ReFlar" class="no-underline hover:underline mr-4 text-sm" target="_blank" rel="noreferrer">
+        <icon name="brands/github" scale="1.5" />
+      </a>
+
+      <a href="/discord" class="no-underline hover:underline mr-4 text-sm" target="_blank" rel="noreferrer">
+        <icon name="brands/discord" scale="1.5" />
+      </a>
     </div>
   </nav>
 </template>
@@ -30,6 +36,11 @@
 
     &.router-link-exact-active {
       color: #42b983;
+    }
+
+    .fa-icon {
+      vertical-align: middle;
+      margin-bottom: 6px;
     }
   }
 
