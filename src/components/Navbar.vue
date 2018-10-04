@@ -10,7 +10,7 @@
       <router-link to="/extensions" class="no-underline hover:underline mr-4 text-sm">Extensions</router-link>
       <router-link to="/members" class="no-underline hover:underline mr-4 text-sm">Members</router-link>
       
-      <a href="https://github.com/ReFlar" class="no-underline hover:underline mr-4 text-sm" target="_blank">GitHub</a>
+      <a href="https://github.com/ReFlar" class="no-underline hover:underline mr-4 text-sm" target="_blank" rel="noreferrer">GitHub</a>
     </div>
   </nav>
 </template>

@@ -4,14 +4,17 @@ import Home from "./views/Home.vue";
 
 Vue.use(Router);
 
-export default new Router({
+const router = new Router({
   mode: "history",
   base: process.env.BASE_URL,
   routes: [
     {
       path: "/",
       name: "home",
-      component: Home
+      component: Home,
+      meta: {
+        title: "ReFlar"
+      }
     },
     {
       path: "/about",
@@ -36,3 +39,11 @@ export default new Router({
     }
   ]
 });
+
+router.beforeEach((to, from, next) => {
+  document.title =
+    to.meta.title || to.name.charAt(0).toUpperCase() + to.name.slice(1);
+  next();
+});
+
+export default router;

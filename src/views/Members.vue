@@ -3,7 +3,7 @@
     <h1 class="py-2">Members</h1>
     <div class="items-list">
       <div class="card member py-8 overflow-hidden" v-for="member in members" :key="member.name">
-        <a :href="member.github && `https://github.com/${member.github}`" target="_blank">
+        <a :href="member.github && `https://github.com/${member.github}`" target="_blank" rel="noreferrer">
           <img v-lazy="`https://github.com/${member.github}.png`" :alt="member.name" class="rounded-full w-16 animated" />
           <div class="py-4">
             <div class="h-2">{{ member.name }}</div>
