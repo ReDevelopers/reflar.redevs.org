@@ -2,12 +2,15 @@
   <div id="app">
     <Navbar />
     <div class="container">
-      <router-view/>
+      <transition name="fade">
+        <router-view/>
+      </transition>
     </div>
   </div>
 </template>
 
 <style lang="less">
+@import "assets/styles/transitions.less";
 @import "assets/styles/main.less";
 @import "assets/styles/index.less";
 
