@@ -28,6 +28,7 @@
 
 - name: Tristian K
   github: OrdinaryJellyfish
+  description: A giant nerd that likes to build single-page applications.
   roles:
     - Full-Stack Developer
 
