@@ -1,3 +1,4 @@
+@import "variables.less";
 @import "scrollbars.less";
 
 .card {
@@ -47,4 +48,11 @@ img[lazy="loaded"].animated {
   animation-duration: 1s;
   animation-fill-mode: both;
   animation-name: zoomInStable;
+}
+
+.nprogress-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999999;
 }

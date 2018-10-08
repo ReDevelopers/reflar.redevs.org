@@ -36,13 +36,44 @@ const router = new Router({
       name: "members",
       component: () =>
         import(/* webpackChunkName: "members" */ "./views/Members.vue")
+    },
+    {
+      path: "*",
+      name: "notfound",
+      component: () =>
+        import(/* webpackChunkName: "404" */ "./components/NotFound.vue"),
+      meta: {
+        title: "404 Not Found",
+        progress: {
+          func: [
+            {
+              call: "color",
+              modifier: "temp",
+              argument: "#E94429"
+            }
+          ]
+        }
+      }
     }
   ]
 });
 
 router.beforeEach((to, from, next) => {
-  document.title =
-    to.meta.title || to.name.charAt(0).toUpperCase() + to.name.slice(1);
+  if (to.meta.title || to.name) {
+    document.title =
+      to.meta.title || to.name.charAt(0).toUpperCase() + to.name.slice(1);
+  }
+
+  next();
+});
+
+router.beforeEach((to, from, next) => {
+  let meta;
+
+  if ((meta = to.meta.progress)) {
+    router.app.$Progress.parseMeta(meta);
+  }
+
   next();
 });
 
