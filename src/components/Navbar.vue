@@ -6,14 +6,14 @@
           <img src="../assets/logo.png" height="28" />
         </router-link>
 
-        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
+        <a role="button" :class="'navbar-burger burger ' + (isActive && 'is-active')" aria-label="menu" aria-expanded="false" @click="isActive = !isActive">
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
         </a>
       </div>
 
-      <div id="navbar-menu" class="navbar-menu navbar-end">
+      <div id="navbar-menu" :class="'navbar-menu navbar-end ' + (isActive && 'is-active')">
         <router-link to="/about" class="navbar-item">About</router-link>
         <router-link to="/extensions" class="navbar-item">Extensions</router-link>
         <router-link to="/members" class="navbar-item">Members</router-link>
@@ -55,6 +55,9 @@
 
 <script>
 export default {
-  name: "Navbar"
+  name: "Navbar",
+  data: () => ({
+    isActive: false,
+  })
 };
 </script>
