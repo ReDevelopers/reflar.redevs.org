@@ -1,5 +1,5 @@
 <template>
-  <div id="Members" class="container">
+  <div id="Members" class="container is-fluid">
     <h1 class="title">Members</h1>
     <div class="columns is-multiline">
       <div class="column member" v-for="member in members" :key="member.name">

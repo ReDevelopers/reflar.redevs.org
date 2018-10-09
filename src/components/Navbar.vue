@@ -1,6 +1,6 @@
 <template>
   <nav id="navbar" class="navbar is-dark" role="navigation" aria-label="main navigation">
-    <div class="container">
+    <div class="container is-fluid">
       <div class="navbar-brand">
         <router-link to="/" class="navbar-item">
           <img src="../assets/logo.png" height="28" />

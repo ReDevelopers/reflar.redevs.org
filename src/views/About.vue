@@ -1,7 +1,5 @@
 <template>
-  <div id="About">
-    <div class="container">
-      <h1 class="title">About</h1>
-    </div>
+  <div id="About" class="container is-fluid">
+    <h1 class="title">About</h1>
   </div>
 </template>

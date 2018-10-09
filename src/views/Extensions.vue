@@ -1,5 +1,5 @@
 <template>
-  <div id="Extensions" class="container">
+  <div id="Extensions" class="container is-fluid">
     <h1 class="title">Extensions</h1>
     <div class="columns is-multiline">
       <div class="column extension" v-for="ext in exts" :key="ext.name">
