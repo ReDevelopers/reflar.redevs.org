@@ -1,46 +1,49 @@
 <template>
-  <nav id="navbar" class="flex flex-no-wrap items-center justify-between lg-auto p-4">
-    <div class="flex-no-shrink inline-block logo">
-      <router-link to="/">
-        <img alt="ReFlar Logo" src="../assets/logo.png" />
-      </router-link>
-    </div>
-    <div class="links">
-      <router-link to="/about" class="no-underline hover:underline mr-4 text-sm">About</router-link>
-      <router-link to="/extensions" class="no-underline hover:underline mr-4 text-sm">Extensions</router-link>
-      <router-link to="/members" class="no-underline hover:underline mr-4 text-sm">Members</router-link>
-      
-      <a href="https://github.com/ReFlar" class="no-underline hover:underline mr-4 text-sm" target="_blank" rel="noreferrer">
-        <icon name="brands/github" scale="1.5" />
-      </a>
+  <nav id="navbar" class="navbar is-dark" role="navigation" aria-label="main navigation">
+    <div class="container">
+      <div class="navbar-brand">
+        <router-link to="/" class="navbar-item">
+          <img src="../assets/logo.png" height="28" />
+        </router-link>
 
-      <a href="/discord" class="no-underline hover:underline mr-4 text-sm" target="_blank" rel="noreferrer">
-        <icon name="brands/discord" scale="1.5" />
-      </a>
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbar-menu" class="navbar-menu navbar-end">
+        <router-link to="/about" class="navbar-item">About</router-link>
+        <router-link to="/extensions" class="navbar-item">Extensions</router-link>
+        <router-link to="/members" class="navbar-item">Members</router-link>
+        
+        <a href="https://github.com/ReFlar" class="navbar-item" target="_blank" rel="noreferrer">
+          <icon name="brands/github" scale="1.5" />
+        </a>
+
+        <a href="/discord" class="navbar-item" target="_blank" rel="noreferrer">
+          <icon name="brands/discord" scale="1.5" />
+        </a>
+      </div>
     </div>
   </nav>
 </template>
 
 <style lang="less">
 #navbar {
-  padding-left: 5%;
-  padding-right: 5%;
   background-color: #263238;
   margin-bottom: 20px;
   text-transform: uppercase;
+  font-size: 0.9rem;
 
   a {
-    color: white;
-    font-weight: bold;
     transition: color 0.25s linear;
+    font-weight: 500;
 
-    &.router-link-exact-active {
+    &.is-active {
       color: #42b983;
-    }
-
-    .fa-icon {
-      vertical-align: middle;
-      margin-bottom: 6px;
+      background-color: transparent;
     }
   }
 
