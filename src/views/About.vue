@@ -1,5 +1,5 @@
 <template>
-  <div id="About">
-    <h1 class="py-2">About</h1>
+  <div id="About" class="container is-fluid">
+    <h1 class="title">About</h1>
   </div>
 </template>

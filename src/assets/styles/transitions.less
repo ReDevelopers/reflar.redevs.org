@@ -2,12 +2,7 @@
   transition: opacity .5s;
 }
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
-  position: fixed;
-  top: 86px;
-  left: 5%;
-  opacity: 0;
-
-  &#Home, &#About, &#Extensions, &#Members {
-    width: 90%;
-  }
+  position: absolute;
+  left: 0;
+  right: 0;
 }

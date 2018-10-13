@@ -1,36 +1,31 @@
 <template>
   <div id="app">
-    <div class="nprogress-container"></div>
     <Navbar />
-    <div class="container">
+    
+    <div id="content">
       <transition name="fade">
         <keep-alive>
           <router-view/>
         </keep-alive>
       </transition>
     </div>
+
     <vue-progress-bar />
   </div>
 </template>
 
+<style lang="scss">
+@import "assets/styles/bulma.scss";
+</style>
+
 <style lang="less">
-@import "assets/styles/transitions.less";
-@import "assets/styles/main.less";
 @import "assets/styles/index.less";
 
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-}
-
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 90%;
-  text-align: left;
 }
 </style>
 
