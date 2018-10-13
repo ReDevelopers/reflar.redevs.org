@@ -57,7 +57,7 @@
 export default {
   name: "Navbar",
   data: () => ({
-    isActive: false,
+    isActive: false
   })
 };
 </script>

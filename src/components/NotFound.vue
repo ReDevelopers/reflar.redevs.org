@@ -34,14 +34,6 @@
   </div>
 </template>
 
-<style lang="less">
-#NotFound {
-  .message {
-    .icon {}
-  }
-}
-</style>
-
 <script>
 export default {
   name: "NotFound"
