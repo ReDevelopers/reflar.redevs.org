@@ -15,9 +15,23 @@
   </div>
 </template>
 
-<style lang="less">
+<style lang="scss">
+$height: calc(100vh - 4rem - 60px);
+
 #Home {
   margin-top: -20px;
+  min-height: 200px;
+  height: $height;
+  max-height: $height;
+
+  .hero {
+    height: 100%;
+  }
+
+  .hero-body .subtitle {
+    padding-top: 2rem;
+    line-height: 1.5;
+  }
 }
 </style>
 

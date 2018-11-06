@@ -11,6 +11,8 @@
     </div>
 
     <vue-progress-bar />
+
+    <Footer />
   </div>
 </template>
 
@@ -20,22 +22,27 @@
 
 <style lang="less">
 @import "assets/styles/index.less";
-
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
+
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 60px;
 }
 </style>
 
 <script>
 import Navbar from "@/components/Navbar.vue";
+import Footer from "@/components/Footer.vue";
 
 export default {
   name: "App",
   components: {
-    Navbar
+    Navbar,
+    Footer
   },
   mounted() {
     this.$Progress.finish();

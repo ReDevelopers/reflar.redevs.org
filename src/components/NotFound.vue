@@ -27,7 +27,7 @@
       </ul>
       <hr>
       <ul>
-        <li><a href="https://github.com/ReFlar" target="_blank" rel="noreferrer">ReFlar GitHub</a></li>
+        <li><a href="/github" target="_blank" rel="noreferrer">ReFlar GitHub</a></li>
         <li><a href="https://discuss.flarum.org" target="_blank" rel="noreferrer">Flarum Community</a></li>
       </ul>
     </div>

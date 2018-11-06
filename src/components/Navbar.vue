@@ -18,7 +18,7 @@
         <router-link to="/extensions" class="navbar-item">Extensions</router-link>
         <router-link to="/members" class="navbar-item">Members</router-link>
         
-        <a href="https://github.com/ReFlar" class="navbar-item" target="_blank" rel="noreferrer">
+        <a href="/github" class="navbar-item" target="_blank" rel="noreferrer">
           <icon name="brands/github" scale="1.5" />
         </a>
 
