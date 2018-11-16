@@ -3,10 +3,13 @@
     <h1 class="title">About</h1>
 
     <div class="content">
-      <h3 class="is-size-5">Our Goal</h3>
-      <p>We want to extend Flarum using it's full potential and provide quality 3rd party extensions.</p>
+      <p>ReFlar is a Flarum 3rd party extension development group that primarily focuses on the Flarum extension ecosystem.</p>
+      <p>
+        Founded by Charlie (CDK2020) and Christian (Ralkage) in 2017, what started out as a two eager people wanting to bring high quality and highly requested extenions to the Flarum community, ReFlar has been gifted with talented new joiners over the span of a year.
+        From polls to gamification, ReFlar knows what forum communities want and need from what is not readily available in the beta stages of Flarum.
+      </p>
 
-      <h3 class="is-size-5">Following Our Work  </h3>
+      <h3 class="is-size-5">Following Our Work</h3>
       <p>
         You can find our extensions on <a href="/github" target="_blank">GitHub</a>.
         <br>
