@@ -51,11 +51,11 @@ export default {
 
         delete i.extension;
       } else if (i.member) {
-        const member = members.find(m => m.github == i.member);
+        const member = members.find(m => (m.github || m.name) == i.member);
 
         i.title = member.name || member.github;
         i.image = `https://github.com/${member.github}.png`;
-        i.link = `https://github.com/${member.github}`;
+        if (member.github) i.link = `https://github.com/${member.github}`;
       }
 
       return i;
