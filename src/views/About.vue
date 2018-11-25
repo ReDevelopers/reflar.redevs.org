@@ -19,5 +19,47 @@
       <h3 class="is-size-5">Contributing</h3>
       <p>You can apply to ReFlar by sending your application to <a href="mailto:apply@redevs.org">apply@redevs.org</a>.</p>
     </div>
+
+    <div>
+      <Timeline :items="items" />
+    </div>
   </div>
 </template>
+
+<script>
+import Timeline from "../components/Timeline";
+import items from "../data/timeline.yml";
+import extensions from "../data/extensions.yml";
+import members from "../data/members.yml";
+
+export default {
+  components: {
+    Timeline
+  },
+  data: () => ({
+    items: items.map(i => {
+      if (i.extension) {
+        const ext = extensions.find(ext => (ext.id || ext.name.toLowerCase()) == i.extension);
+        if (!ext) return;
+
+        const id = ext.id || ext.name.toLowerCase();
+
+        i.title = ext.name;
+        i.image = `https://flagrow.io/storage/icons/reflar$${ext.img || id}.png`;
+        i.link = `https://flagrow.io/extensions/reflar/${id}`;
+        i.small = true;
+
+        delete i.extension;
+      } else if (i.member) {
+        const member = members.find(m => m.github == i.member);
+
+        i.title = member.name || member.github;
+        i.image = `https://github.com/${member.github}.png`;
+        i.link = `https://github.com/${member.github}`;
+      }
+
+      return i;
+    }).filter(Boolean),
+  })
+};
+</script>
