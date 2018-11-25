@@ -43,7 +43,7 @@
       display: flex;
       margin-bottom: 0;
       margin-top: -5px;
-      
+
       .timeline-title {
         font-size: 1em;
       }
@@ -74,14 +74,14 @@
       z-index: 100;
 
       // &.has([lazy=loaded]) {
-        // }
+      // }
 
       img {
         border-radius: 50%;
         width: 100%;
         height: 100%;
-      
-        &[lazy=loaded] {
+
+        &[lazy="loaded"] {
           box-shadow: 0px 0px 5px #000000;
         }
       }
@@ -89,7 +89,7 @@
 
     .timeline-date {
       font-size: 0.7em;
-      color: #555
+      color: #555;
     }
 
     .timeline-title {
@@ -100,7 +100,7 @@
 </style>
 
 <script>
-import dayjs from 'dayjs';
+import dayjs from "dayjs";
 
 export default {
   name: "timeline",
@@ -110,14 +110,12 @@ export default {
     getItems() {
       return this.items
         .slice()
-        .sort(
-          (a, b) => dayjs(b.date).diff(dayjs(a.date))
-        );
+        .sort((a, b) => dayjs(b.date).diff(dayjs(a.date)));
     }
   },
   methods: {
     formatDate(date) {
-      return dayjs(date).format('MMMM D, YYYY');
+      return dayjs(date).format("MMMM D, YYYY");
     }
   }
 };

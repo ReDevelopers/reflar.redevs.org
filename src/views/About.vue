@@ -37,29 +37,34 @@ export default {
     Timeline
   },
   data: () => ({
-    items: items.map(i => {
-      if (i.extension) {
-        const ext = extensions.find(ext => (ext.id || ext.name.toLowerCase()) == i.extension);
-        if (!ext) return;
+    items: items
+      .map(i => {
+        if (i.extension) {
+          const ext = extensions.find(
+            ext => (ext.id || ext.name.toLowerCase()) == i.extension
+          );
+          if (!ext) return;
 
-        const id = ext.id || ext.name.toLowerCase();
+          const id = ext.id || ext.name.toLowerCase();
 
-        i.title = ext.name;
-        i.image = `https://flagrow.io/storage/icons/reflar$${ext.img || id}.png`;
-        i.link = `https://flagrow.io/extensions/reflar/${id}`;
-        i.small = true;
+          i.title = ext.name;
+          i.image = `https://flagrow.io/storage/icons/reflar$${ext.img ||
+            id}.png`;
+          i.link = `https://flagrow.io/extensions/reflar/${id}`;
+          i.small = true;
 
-        delete i.extension;
-      } else if (i.member) {
-        const member = members.find(m => (m.github || m.name) == i.member);
+          delete i.extension;
+        } else if (i.member) {
+          const member = members.find(m => (m.github || m.name) == i.member);
 
-        i.title = member.name || member.github;
-        i.image = `https://github.com/${member.github}.png`;
-        if (member.github) i.link = `https://github.com/${member.github}`;
-      }
+          i.title = member.name || member.github;
+          i.image = `https://github.com/${member.github}.png`;
+          if (member.github) i.link = `https://github.com/${member.github}`;
+        }
 
-      return i;
-    }).filter(Boolean),
+        return i;
+      })
+      .filter(Boolean)
   })
 };
 </script>
