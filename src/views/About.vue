@@ -5,7 +5,7 @@
     <div class="content">
       <p>ReFlar is a Flarum 3rd party extension development group that primarily focuses on the Flarum extension ecosystem.</p>
       <p>
-        Founded by Charlie (CDK2020) and Christian (Ralkage) in 2017, what started out as a two eager people wanting to bring high quality and highly requested extenions to the Flarum community, ReFlar has been gifted with talented new joiners over the span of a year.
+        Founded by Charlie (CDK2020) and Christian (Ralkage) in 2017, what started out as two eager people wanting to bring high quality and highly requested extensions to the Flarum community, ReFlar has been gifted with talented new members over the span of a year.
         From polls to gamification, ReFlar knows what forum communities want and need from what is not readily available in the beta stages of Flarum.
       </p>
 
