@@ -32,6 +32,10 @@
 @import "../assets/styles/animations.less";
 
 #Extensions {
+  .columns {
+    justify-content: space-around;
+  }
+
   .extension {
     flex-grow: 0;
     flex-shrink: 0;
