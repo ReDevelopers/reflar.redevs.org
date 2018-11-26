@@ -9,20 +9,19 @@
         From polls to gamification, ReFlar knows what forum communities want and need from what is not readily available in the beta stages of Flarum.
       </p>
 
-      <h3 class="is-size-5">Following Our Work</h3>
+      <h2 class="is-size-4">Following Our Work</h2>
       <p>
         You can find our extensions on <a href="/github" target="_blank">GitHub</a>.
         <br>
         You can also join our <a href="/discord" target="_blank">Discord</a> server for even more fun!
       </p>
 
-      <h3 class="is-size-5">Contributing</h3>
+      <h2 class="is-size-4">Contributing</h2>
       <p>You can apply to ReFlar by sending your application to <a href="mailto:apply@redevs.org">apply@redevs.org</a>.</p>
-    </div>
 
-    <div>
-      <Timeline :items="items" />
+      <h2 class="is-size-4">Timeline</h2>
     </div>
+    <Timeline :items="items" />
   </div>
 </template>
 

@@ -59,7 +59,7 @@
       .timeline-image {
         height: 40px;
         width: 40px;
-        margin-top: 2.5px;
+        margin-top: 5px;
         left: calc(50% - 20px);
       }
     }
