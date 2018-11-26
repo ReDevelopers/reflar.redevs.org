@@ -28,7 +28,7 @@
 
   &:before {
     background-color: #ccc;
-    content: '';
+    content: "";
     bottom: 50px;
     top: 25px;
     left: calc(50% - 1.5px);
@@ -64,7 +64,8 @@
       }
     }
 
-    .timeline-panel, .timeline-opposite {
+    .timeline-panel,
+    .timeline-opposite {
       flex: 1 1 100%;
     }
 
