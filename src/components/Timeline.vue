@@ -9,7 +9,10 @@
         <div class="timeline-heading">
           <p class="timeline-date" v-if="item.date">{{ formatDate(item.date) }}</p>
           <h4 class="timeline-title">
-            <a :href="item.link" target="_blank">{{ item.title }}</a>
+            <a :href="item.link" target="_blank">
+              <icon :name="item.icon" v-if="item.icon" />
+              {{ item.title }}
+              </a>
           </h4>
         </div>
       </div>
@@ -61,6 +64,11 @@
         width: 40px;
         margin-top: 5px;
         left: calc(50% - 20px);
+      }
+
+      .fa-icon {
+        width: 12px;
+        height: 12px;
       }
     }
 

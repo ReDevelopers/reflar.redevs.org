@@ -151,6 +151,7 @@ export default {
             id}.png`;
           i.link = `https://flagrow.io/extensions/reflar/${id}`;
           i.small = true;
+          i.icon = "puzzle-piece";
 
           delete i.extension;
         } else if (i.member) {
@@ -158,6 +159,7 @@ export default {
 
           i.title = member.name || member.github;
           i.image = `https://github.com/${member.github}.png`;
+          i.icon = "user-plus";
           if (member.github) i.link = `https://github.com/${member.github}`;
         }
 
