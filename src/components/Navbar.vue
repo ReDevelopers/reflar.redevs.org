@@ -16,6 +16,7 @@
       <div id="navbar-menu" :class="'navbar-menu navbar-end ' + (isActive && 'is-active')">
         <router-link to="/about" class="navbar-item">About</router-link>
         <router-link to="/members" class="navbar-item">Members</router-link>
+        <a class="navbar-item" href="/demo" target="_blank">Demo</a>
         
         <a href="/github" class="navbar-item" target="_blank" rel="noreferrer">
           <icon name="brands/github" scale="1.5" />
