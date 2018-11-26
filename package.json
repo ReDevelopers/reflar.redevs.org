@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "buefy": "^0.7.0",
+    "dayjs": "^1.7.7",
     "vue": "^2.5.17",
     "vue-awesome": "^3.2.0",
     "vue-lazyload": "^1.2.6",

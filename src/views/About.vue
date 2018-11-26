@@ -9,15 +9,61 @@
         From polls to gamification, ReFlar knows what forum communities want and need from what is not readily available in the beta stages of Flarum.
       </p>
 
-      <h3 class="is-size-5">Following Our Work</h3>
+      <h2 class="is-size-4">Following Our Work</h2>
       <p>
         You can find our extensions on <a href="/github" target="_blank">GitHub</a>.
         <br>
         You can also join our <a href="/discord" target="_blank">Discord</a> server for even more fun!
       </p>
 
-      <h3 class="is-size-5">Contributing</h3>
+      <h2 class="is-size-4">Contributing</h2>
       <p>You can apply to ReFlar by sending your application to <a href="mailto:apply@redevs.org">apply@redevs.org</a>.</p>
+
+      <h2 class="is-size-4">Timeline</h2>
     </div>
+    <Timeline :items="items" />
   </div>
 </template>
+
+<script>
+import Timeline from "../components/Timeline";
+import items from "../data/timeline.yml";
+import extensions from "../data/extensions.yml";
+import members from "../data/members.yml";
+
+export default {
+  components: {
+    Timeline
+  },
+  data: () => ({
+    items: items
+      .map(i => {
+        if (i.extension) {
+          const ext = extensions.find(
+            ext => (ext.id || ext.name.toLowerCase()) == i.extension
+          );
+          if (!ext) return;
+
+          const id = ext.id || ext.name.toLowerCase();
+
+          i.title = ext.name;
+          i.image = `https://flagrow.io/storage/icons/reflar$${ext.img ||
+            id}.png`;
+          i.link = `https://flagrow.io/extensions/reflar/${id}`;
+          i.small = true;
+
+          delete i.extension;
+        } else if (i.member) {
+          const member = members.find(m => (m.github || m.name) == i.member);
+
+          i.title = member.name || member.github;
+          i.image = `https://github.com/${member.github}.png`;
+          if (member.github) i.link = `https://github.com/${member.github}`;
+        }
+
+        return i;
+      })
+      .filter(Boolean)
+  })
+};
+</script>

@@ -30,9 +30,12 @@
 
 #Extensions {
   .extension {
-    min-width: 400px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 25%;
 
     .card {
+      background-color: transparent;
       width: 100%;
     }
   }

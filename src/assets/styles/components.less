@@ -71,3 +71,24 @@ img[lazy="loaded"].animated {
   width: 100%;
   z-index: 999999;
 }
+
+@media screen and (max-width: 1088px) {
+  #navbar {
+    width: 100%;
+
+    .navbar-brand, .navbar-menu.is-active {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+    
+    .container {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  .container.is-fluid {
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+}
