@@ -1,42 +1,69 @@
 <template>
-  <div id="Home">
-    <section class="hero is-primary">
-      <div class="hero-body">
-        <div class="container">
-          <h1 class="title">
-            ReFlar
-          </h1>
-          <h2 class="subtitle">
-            Creating Quality Flarum Extensions.
-          </h2>
+  <div id="Extensions" class="container is-fluid">
+    <h1 class="title">ReFlar</h1>
+    <h2 class="subtitle">
+      Creating Quality Flarum Extensions.
+    </h2>
+    <div class="columns is-multiline">
+      <div class="column extension" v-for="ext in exts" :key="ext.name">
+        <div class="card">
+          <div class="card-content">
+            <a :href="`https://flagrow.io/extensions/reflar/${ext.id}`" target="_blank" rel="noreferrer">
+              <img v-lazy="`https://flagrow.io/storage/icons/reflar$${ext.img || ext.id}.png`" :alt="ext.name" class="animated" />
+              <p class="title">{{ ext.name }}</p>
+            </a>
+            <p class="description" v-if="ext.description">{{ ext.description }}</p>
+
+            <div class="tags">
+              <span class="tag" v-for="member in ext.authors" v-if="member" :key="member.name || member">
+                <a :href="member.github && `https://github.com/${member.github}`" target="_blank" rel="noreferrer">
+                  {{ member.name || member }}
+                </a>
+              </span>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
   </div>
 </template>
 
-<style lang="scss">
-$height: calc(100vh - 4rem - 60px);
+<style lang="less">
+@import "../assets/styles/animations.less";
 
-#Home {
-  margin-top: -20px;
-  min-height: 200px;
-  height: $height;
-  max-height: $height;
+#Extensions {
+  .extension {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 25%;
 
-  .hero {
-    height: 100%;
-  }
-
-  .hero-body .subtitle {
-    padding-top: 2rem;
-    line-height: 1.5;
+    .card {
+      width: 100%;
+    }
   }
 }
 </style>
 
+
 <script>
+import members from "../data/members.yml";
+import extensions from "../data/extensions.yml";
+
+const exts = extensions.map(e => {
+  e.authors = e.authors.map(
+    author =>
+      members.find(
+        m => (m.name && m.name.toLowerCase() === author) || m.github === author
+      ) || author
+  );
+  e.id = e.id || e.name.toLowerCase();
+  return e;
+});
+
 export default {
-  name: "home"
+  name: "Extensions",
+  data: () => ({
+    exts
+  })
 };
 </script>

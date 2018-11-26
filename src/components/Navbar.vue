@@ -15,7 +15,6 @@
 
       <div id="navbar-menu" :class="'navbar-menu navbar-end ' + (isActive && 'is-active')">
         <router-link to="/about" class="navbar-item">About</router-link>
-        <router-link to="/extensions" class="navbar-item">Extensions</router-link>
         <router-link to="/members" class="navbar-item">Members</router-link>
         
         <a href="/github" class="navbar-item" target="_blank" rel="noreferrer">

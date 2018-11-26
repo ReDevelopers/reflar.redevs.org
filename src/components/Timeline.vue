@@ -30,7 +30,7 @@
     background-color: #ccc;
     content: "";
     bottom: 50px;
-    top: 25px;
+    top: 50px;
     left: calc(50% - 1.5px);
     position: absolute;
     width: 3px;
