@@ -1,6 +1,7 @@
 <template>
-  <ul class="timeline">
-    <li v-for="item in getItems" :key="item.title" :class="`timeline-item ${item.small && 'timeline-item-small'}`">
+  <div class="timeline">
+    <div v-for="item in getItems" :key="item.title" :class="`timeline-item ${item.small && 'timeline-item-small'}`">
+      <div class="timeline-opposite"></div>
       <div class="timeline-image" v-if="item.image">
         <img v-lazy="item.image" class="animated" />
       </div>
@@ -12,8 +13,8 @@
           </h4>
         </div>
       </div>
-    </li>
-  </ul>
+    </div>
+  </div>
 </template>
 
 <style lang="less">
@@ -23,58 +24,65 @@
   list-style: none;
   padding: 10px 0 10px;
   position: relative;
+  font-size: 1.1em;
 
   &:before {
-    background-color: #eee;
-    bottom: 0;
-    content: " ";
-    left: 50px;
-    margin-left: -1.5px;
+    background-color: #ccc;
+    content: '';
+    bottom: 50px;
+    top: 25px;
+    left: calc(50% - 1.5px);
     position: absolute;
-    top: 0;
     width: 3px;
   }
 
-  > li {
-    margin-bottom: 5px;
+  .timeline-item {
+    margin-bottom: 10px;
     position: relative;
+    display: flex;
+    flex-direction: row;
+
+    &:nth-of-type(even) {
+      flex-direction: row-reverse;
+      text-align: right;
+    }
 
     &.timeline-item-small {
-      display: flex;
-      margin-bottom: 0;
       margin-top: -5px;
+      margin-bottom: 0;
 
       .timeline-title {
         font-size: 1em;
+        font-weight: normal;
       }
 
-      .timeline-image img {
-        margin-top: 5%;
-        margin-left: 10%;
-        width: 80%;
-        height: 80%;
+      .timeline-image {
+        height: 40px;
+        width: 40px;
+        margin-top: 2.5px;
+        left: calc(50% - 20px);
       }
     }
 
-    > .timeline-panel {
+    .timeline-panel, .timeline-opposite {
+      flex: 1 1 100%;
+    }
+
+    .timeline-panel {
       border-radius: 2px;
-      margin-left: 75px;
       padding: 20px;
-      position: relative;
     }
 
     .timeline-image {
       font-size: 1.4em;
-      height: 50px;
-      left: 50px;
-      margin-left: -25px;
-      position: absolute;
       top: 16px;
+      height: 50px;
       width: 50px;
       z-index: 100;
 
-      // &.has([lazy=loaded]) {
-      // }
+      left: calc(50% - 25px);
+      align-self: center;
+      position: absolute;
 
       img {
         border-radius: 50%;
@@ -94,7 +102,16 @@
 
     .timeline-title {
       font-size: 1.1em;
+      font-weight: 500;
     }
+  }
+
+  .timeline-item:nth-child(odd) .timeline-panel {
+    margin-left: 96px;
+  }
+
+  .timeline-item:nth-child(even) .timeline-panel {
+    margin-right: 96px;
   }
 }
 </style>
