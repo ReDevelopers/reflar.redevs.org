@@ -2,7 +2,7 @@
   <footer id="footer">
     <div class="content has-text-centered">
       <p>
-        Copyright © 2018 <a href="https://redevs.org">Revolutionary Developers</a>.
+        Copyright © 2019 <a href="https://redevs.org">Revolutionary Developers</a>.
       </p>
     </div>
   </footer>
