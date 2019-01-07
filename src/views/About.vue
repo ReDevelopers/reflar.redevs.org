@@ -170,7 +170,10 @@ export default {
 
           i.title = member.name || member.github;
           i.image = `https://github.com/${member.github}.png`;
-          i.icon = "user-plus";
+          i.icon =
+            !i.action || i.action.toLowerCase() == "joined"
+              ? "user-plus"
+              : "user-minus";
           if (member.github) i.link = `https://github.com/${member.github}`;
         }
 

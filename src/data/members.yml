@@ -23,6 +23,7 @@
 
 - name: Shahiem S
   github: Shahiem
+  hide: true
   roles:
     - Full-Stack Developer
 

@@ -54,7 +54,7 @@ import members from "../data/members.yml";
 export default {
   name: "Members",
   data: () => ({
-    members
+    members: members.filter(e => !e.hide)
   })
 };
 </script>
