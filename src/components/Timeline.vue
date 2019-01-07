@@ -1,18 +1,23 @@
 <template>
   <div class="timeline">
-    <div v-for="item in getItems" :key="item.title" :class="`timeline-item ${item.small && 'timeline-item-small'}`">
+    <div
+      v-for="item in getItems"
+      :key="item.title"
+      :class="`timeline-item ${item.small && 'timeline-item-small'}`"
+    >
       <div class="timeline-opposite"></div>
       <div class="timeline-image" v-if="item.image">
         <img v-lazy="item.image" class="animated" />
       </div>
       <div class="timeline-panel">
         <div class="timeline-heading">
-          <p class="timeline-date" v-if="item.date">{{ formatDate(item.date) }}</p>
+          <p class="timeline-date" v-if="item.date">
+            {{ formatDate(item.date) }}
+          </p>
           <h4 class="timeline-title">
             <a :href="item.link" target="_blank">
-              <icon :name="item.icon" v-if="item.icon" />
-              {{ item.title }}
-              </a>
+              <icon :name="item.icon" v-if="item.icon" /> {{ item.title }}
+            </a>
           </h4>
         </div>
       </div>

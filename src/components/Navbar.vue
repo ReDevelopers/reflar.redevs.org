@@ -1,23 +1,36 @@
 <template>
-  <nav id="navbar" class="navbar is-dark" role="navigation" aria-label="main navigation">
+  <nav
+    id="navbar"
+    class="navbar is-dark"
+    role="navigation"
+    aria-label="main navigation"
+  >
     <div class="container is-fluid">
       <div class="navbar-brand">
         <router-link to="/" class="navbar-item">
           <img src="../assets/logo.png" height="28" />
         </router-link>
 
-        <a role="button" :class="'navbar-burger burger ' + (isActive && 'is-active')" aria-label="menu" aria-expanded="false" @click="isActive = !isActive">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
+        <a
+          role="button"
+          :class="'navbar-burger burger ' + (isActive && 'is-active')"
+          aria-label="menu"
+          aria-expanded="false"
+          @click="isActive = !isActive"
+        >
+          <span aria-hidden="true"></span> <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
         </a>
       </div>
 
-      <div id="navbar-menu" :class="'navbar-menu navbar-end ' + (isActive && 'is-active')">
+      <div
+        id="navbar-menu"
+        :class="'navbar-menu navbar-end ' + (isActive && 'is-active')"
+      >
         <router-link to="/about" class="navbar-item">About</router-link>
         <router-link to="/members" class="navbar-item">Members</router-link>
         <a class="navbar-item" href="/demo" target="_blank">Demo</a>
-        
+
         <a href="/github" class="navbar-item" target="_blank" rel="noreferrer">
           <icon name="brands/github" scale="1.5" />
         </a>

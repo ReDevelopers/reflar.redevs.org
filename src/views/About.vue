@@ -3,21 +3,32 @@
     <h1 class="title">About</h1>
 
     <div class="content">
-      <p>ReFlar is a Flarum 3rd party extension development group that primarily focuses on the Flarum extension ecosystem.</p>
       <p>
-        Founded by Charlie (CDK2020) and Christian (Ralkage) in 2017, what started out as two eager people wanting to bring high quality and highly requested extensions to the Flarum community, ReFlar has been gifted with talented new members over the span of a year.
-        From polls to gamification, ReFlar knows what forum communities want and need from what is not readily available in the beta stages of Flarum.
+        ReFlar is a Flarum 3rd party extension development group that primarily
+        focuses on the Flarum extension ecosystem.
+      </p>
+      <p>
+        Founded by Charlie (CDK2020) and Christian (Ralkage) in 2017, what
+        started out as two eager people wanting to bring high quality and highly
+        requested extensions to the Flarum community, ReFlar has been gifted
+        with talented new members over the span of a year. From polls to
+        gamification, ReFlar knows what forum communities want and need from
+        what is not readily available in the beta stages of Flarum.
       </p>
 
       <h2 class="is-size-4">Following Our Work</h2>
       <p>
-        You can find our extensions on <a href="/github" target="_blank">GitHub</a>.
-        <br>
-        You can also join our <a href="/discord" target="_blank">Discord</a> server for even more fun!
+        You can find our extensions on
+        <a href="/github" target="_blank">GitHub</a>. <br />
+        You can also join our
+        <a href="/discord" target="_blank">Discord</a> server for even more fun!
       </p>
 
       <h2 class="is-size-4">Contributing</h2>
-      <p>You can apply to ReFlar by sending your application to <a href="mailto:apply@redevs.org">apply@redevs.org</a>.</p>
+      <p>
+        You can apply to ReFlar by sending your application to
+        <a href="mailto:apply@redevs.org">apply@redevs.org</a>.
+      </p>
 
       <h2 class="is-size-4">Timeline</h2>
     </div>

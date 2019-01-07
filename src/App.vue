@@ -1,12 +1,10 @@
 <template>
   <div id="app">
     <Navbar />
-    
+
     <div id="content">
       <transition name="fade">
-        <keep-alive>
-          <router-view/>
-        </keep-alive>
+        <keep-alive> <router-view /> </keep-alive>
       </transition>
     </div>
 

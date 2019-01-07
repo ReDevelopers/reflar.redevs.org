@@ -6,7 +6,7 @@
           <div class="media">
             <div class="media-left">
               <span class="icon is-danger">
-                <icon name="exclamation-circle"/>
+                <icon name="exclamation-circle" />
               </span>
             </div>
             <div class="media-content">
@@ -25,10 +25,16 @@
         <router-link tag="li" to="/extensions"><a>Extensions</a></router-link>
         <router-link tag="li" to="/members"><a>Members</a></router-link>
       </ul>
-      <hr>
+      <hr />
       <ul>
-        <li><a href="/github" target="_blank" rel="noreferrer">ReFlar GitHub</a></li>
-        <li><a href="https://discuss.flarum.org" target="_blank" rel="noreferrer">Flarum Community</a></li>
+        <li>
+          <a href="/github" target="_blank" rel="noreferrer">ReFlar GitHub</a>
+        </li>
+        <li>
+          <a href="https://discuss.flarum.org" target="_blank" rel="noreferrer"
+            >Flarum Community</a
+          >
+        </li>
       </ul>
     </div>
   </div>

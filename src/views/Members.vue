@@ -5,8 +5,16 @@
       <div class="column member" v-for="member in members" :key="member.name">
         <div class="card">
           <div class="card-content">
-            <a :href="member.github && `https://github.com/${member.github}`" target="_blank" rel="noreferrer">
-              <img v-lazy="`https://github.com/${member.github}.png`" :alt="member.name" class=" animated" />
+            <a
+              :href="member.github && `https://github.com/${member.github}`"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                v-lazy="`https://github.com/${member.github}.png`"
+                :alt="member.name"
+                class=" animated"
+              />
               <p class="title">{{ member.name }}</p>
             </a>
 
@@ -16,7 +24,9 @@
               </span>
             </div>
 
-            <p class="description" v-if="member.description">{{ member.description }}</p>
+            <p class="description" v-if="member.description">
+              {{ member.description }}
+            </p>
           </div>
         </div>
       </div>
@@ -37,7 +47,6 @@
   }
 }
 </style>
-
 
 <script>
 import members from "../data/members.yml";
