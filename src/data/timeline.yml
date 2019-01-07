@@ -40,3 +40,5 @@
   date: 2018/09/15 
 - extension: geotags
   date: 2018/09/25
+- extension: pwned-passwords
+  date: 2019/01/07

@@ -86,3 +86,9 @@
   description: Stop Forum Spam
   authors:
     - CDK2020
+
+- name: Pwned Passwords
+  id: pwned-passwords
+  description: Check user's passwords against the Have I Been Pwned password database
+  authors:
+    - OrdinaryJellyfish
