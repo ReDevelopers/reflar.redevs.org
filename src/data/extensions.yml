@@ -92,3 +92,9 @@
   description: Check user's passwords against the Have I Been Pwned password database
   authors:
     - OrdinaryJellyfish
+
+- name: Inject Mithril Components
+  id: inject-mithril-components
+  description: Inject Mithril components into your pages using native HTML.
+  authors:
+    - datitisev

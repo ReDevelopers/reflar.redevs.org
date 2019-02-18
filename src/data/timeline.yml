@@ -45,3 +45,5 @@
   date: 2018/12/13
 - extension: pwned-passwords
   date: 2019/01/07
+- extension: inject-mithril-components
+  date: 2019/02/17
